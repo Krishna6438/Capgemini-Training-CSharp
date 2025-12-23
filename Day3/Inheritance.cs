@@ -9,7 +9,7 @@ class Person
     //         Name = name;
     //         Age = age;
     //     }
-;
+
     public void GetPersonDetail(Person p)
     {
         //Console.WriteLine($"Id: {p.Id}, Name: {p.Name}, Age: {p.Age}");

@@ -8,8 +8,16 @@
 
         // Student.Run();  // Day03
         // Day03.Run();
-        Inheritance.Run();
-        Day03Practice.Run();
-        LoopExercise.Run();
+        // Inheritance.Run();
+        // Day03Practice.Run();
+        // LoopExercise.Run();
+
+        // MainConstructor.Run();
+        Addition.Run();
+        // FieldsCheck.Run();
+
+        CallAccount.Run();
+
+        MethodOverriding.Run();
     }
 }
