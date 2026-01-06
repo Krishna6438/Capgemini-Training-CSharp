@@ -4,7 +4,7 @@ using Abstraction;
 using ExaminationExample;
 using MultipleInheritance ;
 
-using ExamSchedule;
+// using ExamSchedule;
 
 class Program
 {
@@ -65,7 +65,27 @@ class Program
 
         //////// Day8 
         // MainClass.Run();
-        IndexerExample1.Run();
+        // IndexerExample1.Run();
+        // IndexerTask.Run();
+        // PartialClass.Run();
+        // StaticClassExample.Run();
+
+
+        /////// Day9
+        // WordCountClass.Run();
+        // PalindromeClass.Run();
+        // RegexExample.Run();
+        // MemoryAllocation.Run();
+        // GarbageCollectionExample.Run();
+
+        // MyCollection.Run();
+
+
+
+
+
+        ////// Day 10
+        ObjectToXML.Run();
     }
 
 

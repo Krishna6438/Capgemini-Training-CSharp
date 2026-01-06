@@ -1,19 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
+// using System;
+// using System.Collections.Generic;
+// using System.Text;
 
-namespace ExamSchedule.Model
-{
-    public class Student
-    {
-        public Student()
-        {
+// namespace ExamSchedule.Model
+// {
+//     public class Student
+//     {
+//         public Student()
+//         {
             
-        }
+//         }
 
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int SectionId{get; set;}
-    }
+//         public int Id { get; set; }
+//         public string Name { get; set; }
+//         public int SectionId{get; set;}
+//     }
 
-}
+// }
