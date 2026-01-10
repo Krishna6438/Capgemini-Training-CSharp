@@ -102,7 +102,9 @@ class Program
         // Semester_Subject.Run();
 
         // AdvanceCallback.Run();
-        CustomException.Run();
+        // CustomException.Run();
+
+        EventExample.Run();
     }
 
 
