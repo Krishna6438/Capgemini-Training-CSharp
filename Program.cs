@@ -104,7 +104,10 @@ class Program
         // AdvanceCallback.Run();
         // CustomException.Run();
 
-        EventExample.Run();
+        // EventExample.Run();
+
+
+        Delegates2.Run();
     }
 
 

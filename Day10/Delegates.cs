@@ -1,5 +1,10 @@
 using System;
 
+/* A delegate is a type-safe reference to a method.
+It allows us to store and call methods dynamically at runtime.
+
+*/
+
 // Step 1: Declare a delegate
 // Delegate can point to any method that takes two int parameters
 // and returns an int
