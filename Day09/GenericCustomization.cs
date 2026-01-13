@@ -1,4 +1,7 @@
+/*
+“We use interfaces to achieve loose coupling, flexibility, and maintainability by separating what a class does from how it does it.”
 
+*/
 interface IList
 {
     void Add(string s);

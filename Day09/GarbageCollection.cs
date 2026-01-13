@@ -1,5 +1,15 @@
 using System.Collections;
 using System.Collections.Generic; 
+
+/*
+Dispose() does NOT free memory.
+Garbage Collector does that.
+Dispose() only frees unmanaged resources.
+
+
+
+
+*/
 interface IDisposable
 {
     public void Dispose();
@@ -13,7 +23,10 @@ public class BigBoy : IDisposable
     public ArrayList Names  { get; set; }
     public void Dispose()
     {
-        GC.Collect();
+        // Forces garbage collection for all generations
+        // (In practice, this is not recommended, GC should run automatically)
+        
+        GC.Collect(); // Forces an immediate garbage collection of all generations
     }
 }
 public class GarbageCollectionExample
