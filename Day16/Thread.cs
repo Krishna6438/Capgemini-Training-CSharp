@@ -2,17 +2,17 @@ public class ThreadingExample
 {
     public static void Task1()
     {
-        for(int i = 0; i < 100; i++)
+        for (int i = 0; i < 100; i++)
         {
-            Console.WriteLine(i+ " ");
+            Console.WriteLine(i + " ");
         }
     }
 
     public static void Task2()
     {
-        for(int i = 100; i < 300; i++)
+        for (int i = 100; i < 300; i++)
         {
-            Console.WriteLine(i+ " ");
+            Console.WriteLine(i + " ");
         }
     }
     public static void Run()
@@ -22,6 +22,10 @@ public class ThreadingExample
 
         t1.Start();
         t2.Start();
+
+        t1.Join();
+        t2.Join();
+        Console.WriteLine("Both tasks completed");
 
     }
 }
