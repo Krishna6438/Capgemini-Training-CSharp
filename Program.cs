@@ -108,7 +108,11 @@ class Program
 
 
         /// Day15
-        LinqExample.Run();
+        // LinqExample.Run();
+
+        // Day 16
+
+        Generic_Example.Run();
 
 
         
