@@ -76,7 +76,7 @@ class Program
         // PalindromeClass.Run();
         // RegexExample.Run();
         // MemoryAllocation.Run();
-        GarbageCollectionExample.Run();
+        // GarbageCollectionExample.Run();
 
         // MyCollection.Run();
 
@@ -112,7 +112,10 @@ class Program
 
         // Day 16
 
-        Generic_Example.Run();
+        // Generic_Example.Run();
+        CallerClass.Run();
+
+        // DelegateExamples.Run();
 
 
         
