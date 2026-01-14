@@ -1,4 +1,4 @@
-namespace Task
+namespace Task1
 {
     class Employee
     {
