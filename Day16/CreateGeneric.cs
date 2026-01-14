@@ -1,53 +1,152 @@
-using System.Runtime.CompilerServices;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Student3
-{
-    public string? Name { get; set; }
-}
-public class UGStudent : Student3
-{
-    public int HighSchoolMarks { get; set; }
-}
-public class PGStudent : Student3
-{
-    public int UGMarks { get; set; }
-}
 
-public class MyGlobalType<T, K>
-{
-    public string GetObjectType(T t1, K t2)
+
+    public class Student3
     {
-        return $"Type1: {t1.GetType().Name}, Type2: {t2.GetType().Name}";
+        
+        public int Id { get; set; }
     }
-}
 
-public class CallerClass
-{
-    public static void Run()
+    public class UGStudent : Student3
     {
-        // MyGlobalType<Object> my = new MyGlobalType<Object>();
-        // Object obj = new object();
-        // string result = my.GetObjectType(obj);
-        // Console.WriteLine(result);
+        public int HighSchoolMark { get; set; }
+    }
+
+    public class PGStudent : UGStudent
+    {
+        public int UGMark { get; set; }
+    }
 
 
-        MyGlobalType<UGStudent, PGStudent> myGlobalType = new();
-        UGStudent obj = new();
-        PGStudent obj2 = new();
-        string result = myGlobalType.GetObjectType(obj, obj2);
-        System.Console.WriteLine(result);
-
-        Predicate<int> isEven = number => number % 2 == 0;
-        bool check = isEven(10);
-        Console.WriteLine("The number is Even: " + check);
-
-        Action<string> logger = message =>
+    public class CallerClass
+    {
+        public static void Run()
         {
-            Console.WriteLine($"[LOG]: {message} at {DateTime.Now}");
-        };
-        logger("Application Started"); // Invoking the action 
+            Action<string> logger = NewMethod();
+
+            if (DateTime.Now.Hour < 12)
+            {
+                logger = GoodMoring();
+            }
+            else
+            {
+                logger = GoodDay();
+            }
+
+            logger("dd");
+
+
+
+
+            logger = Method2();
+
+            logger("Application Started"); // Invoking the Action
+
+        }
+
+        private static Action<string> GoodDay()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static Action<string> NewMethod()
+        {
+            MyGlobalType<UGStudent> myGlobalType = new MyGlobalType<UGStudent>();
+            //MyGlobalType<Object> myGlobalType1 = new MyGlobalType<Object>();
+
+            UGStudent obj = new UGStudent();
+            string result = myGlobalType.GetDataType(obj);
+            Console.WriteLine(result);
+            Console.ReadLine();
+
+
+
+            return message =>
+            {
+                Console.WriteLine($"[LOG]: {message} at {DateTime.Now}");
+            };
+        }
+
+        private static Action<string> GoodDay(string str)
+        {
+            return message =>
+            {
+                Console.WriteLine($"Good Day to you");
+            };
+        }
+
+        private static Action<string> GoodMoring()
+        {
+            return message =>
+            {
+                Console.WriteLine($"Good Morning");
+            };
+        }
+
+        private static Action<string> Method1()
+        {
+            return message =>
+            {
+                Console.WriteLine($"[LOG]: {message.ToUpper()} at {DateTime.Now}");
+            };
+        }
+
+        private static Action<string> Method2()
+        {
+            return message =>
+            {
+                Console.WriteLine($"Welcome to Programming");
+            };
+        }
+    }
+    public class MyGlobalType<T> where T : Student3
+    {
+        public List<T> MyCollection { get; set; }
+        public string GetDataType(T t)
+        {
+            
+            return t.GetType().ToString();
+        }
+
+        public void AddItem(T t)
+        {
+            MyCollection.Add(t);
+        }
+
+        public List<T> GetCollection()
+        {
+            return MyCollection;
+        }
+
+        public string ActBasedOnType(T t)
+        {
+            if (t is PGStudent)
+            {
+                return "Type is PGStudent";
+            }
+            if (t is UGStudent)
+            {
+                return "Type isU UG";
+            }
+            return "Student";
+
+        }
+
+
+
 
     }
-}
 
-
+    public class MyGlobalType2<T, K>
+    {
+        //public K MyProperty { get; set; }
+        public void MyGLobalFunction(T t, K k)
+        {
+             
+        }
+    }
