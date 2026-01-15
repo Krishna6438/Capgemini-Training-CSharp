@@ -2,7 +2,7 @@
 using ScienceLib;
 using Abstraction;
 using ExaminationExample;
-using MultipleInheritance ;
+using MultipleInheritance;
 
 // using ExamSchedule;
 
@@ -12,7 +12,7 @@ class Program
     {
         // Day01.Run();
 
-       ///////. Day 2 
+        ///////. Day 2 
         // Day02.Run();
         // Day02P.Run();
 
@@ -22,7 +22,7 @@ class Program
         // Inheritance.Run();
         // Day03Practice.Run();
 
-       ////// Day4 
+        ////// Day4 
         // LoopExercise.Run();
 
         // MainConstructor.Run();
@@ -33,7 +33,7 @@ class Program
 
 
         /// Day 5 ///////
-        
+
         // Calculator calc = new Calculator();
         // Console.WriteLine(calc.Add(10, 20));
         //Console.WriteLine(calc.Divide(20,10));
@@ -41,7 +41,7 @@ class Program
         // Physics p = new Physics();
         // Console.WriteLine(p.Speed(100, 5));
 
-        
+
 
         // AbstractionDemo.Run();
 
@@ -51,7 +51,7 @@ class Program
 
         // ExaminationExampleClass.Run();
         // MultipleInheritanceClass.Run();
-        
+
 
 
         /////// Day 7
@@ -116,9 +116,17 @@ class Program
         // CallerClass.Run();
 
         // DelegateExamples.Run();
-        
+
         // ThreadingExample.Run();
+
+        // Calling an async method from a non-async Main method.
+        // GetAwaiter().GetResult() blocks the current thread until the async Task completes.
+        // This is used here to ensure the async code finishes execution in a console application.
         
+        // AsyncAwaitExample.Run().GetAwaiter().GetResult();
+
+        FileExample.Run();
+
     }
 
 
