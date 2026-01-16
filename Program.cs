@@ -134,7 +134,8 @@ class Program
 
         // Day 18 
 
-        CalculateNumbers.Run();
+        // CalculateNumbers.Run();
+        YogaMeditation.Run();
 
     }
 
