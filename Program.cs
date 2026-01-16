@@ -135,7 +135,9 @@ class Program
         // Day 18 
 
         // CalculateNumbers.Run();
-        YogaMeditation.Run();
+        // YogaMeditation.Run();
+
+        Ecommerce.Run();
 
     }
 
