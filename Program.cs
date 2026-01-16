@@ -130,7 +130,11 @@ class Program
 
 
         // Day 17
-        FindItem.Run();
+        // FindItem.Run();
+
+        // Day 18 
+
+        CalculateNumbers.Run();
 
     }
 
