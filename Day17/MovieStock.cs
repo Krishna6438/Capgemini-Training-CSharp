@@ -43,7 +43,7 @@ public class MovieStock
             .OrderBy(m => m.Ratings)
             .ToList();
     }
-    public static void Main()
+    public static void Run()
     {
         MovieStock p = new MovieStock();
 
