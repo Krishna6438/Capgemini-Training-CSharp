@@ -30,10 +30,10 @@ class UserVerification
         UserVerification p = new UserVerification();
 
         Console.Write("Enter name: ");
-        string name = Console.ReadLine();
+        string ?name = Console.ReadLine();
 
         Console.Write("Enter phone number: ");
-        string phone = Console.ReadLine();
+        string ?phone = Console.ReadLine();
 
         try
         {
