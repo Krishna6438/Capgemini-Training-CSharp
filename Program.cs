@@ -140,7 +140,10 @@ class Program
         // Ecommerce.Run();
         // UserAuthentication.Run();
         // Construction.Run();
-        UserVerification.Run();
+        // UserVerification.Run();
+
+
+        Calculator.Run();
 
     }
 
