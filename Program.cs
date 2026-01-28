@@ -143,7 +143,11 @@ class Program
         // UserVerification.Run();
 
 
-        Calculator.Run();
+        // Calculator.Run();
+
+
+        /////
+        WordWand.Run();
 
     }
 
