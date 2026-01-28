@@ -146,8 +146,13 @@ class Program
         // Calculator.Run();
 
 
-        /////
-        WordWand.Run();
+        /////Day 26
+        
+        // WordWand.Run();
+        // YourNameIsMine.Run();
+        // PasswordGeneration.Run();
+        // CakeOrderRun.Run();
+        ForensicReportRun.Run();
 
     }
 
